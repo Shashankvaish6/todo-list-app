@@ -1,0 +1,438 @@
+/* Basic reset */
+body, h1, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* App container styling */
+.todo-app {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.app-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Input container styling */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+#new-task {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Add button styling */
+#add-task-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#add-task-button:hover {
+  background-color: #218838;
+}
+
+/* To-Do list styling */
+.todo-list {
+  list-style-type: none;
+}
+
+/* To-Do item styling */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+make a navbar in which contain span and button of home and contact with css and html
+ChatGPT
+Here's a simple example of an HTML navbar containing a span and buttons for "Home" and "Contact" using CSS and HTML:
+
+HTML
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-brand">My Website</span>
+        <div class="navbar-buttons">
+            <button class="nav-button">Home</button>
+            <button class="nav-button">Contact</button>
+        </div>
+    </nav>
+</body>
+</html>
+CSS (styles.css)
+css
+Copy code
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+/* Brand styling */
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Button container styling */
+.navbar-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Button styling */
+.nav-button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.nav-button:hover {
+    background-color: #777;
+}
+Explanation
+HTML:
+The nav element contains a span for the website name and a div that holds the buttons for "Home" and "Contact".
+CSS:
+The .navbar class styles the navbar, making it a flexible container with space between the brand and the buttons.
+The .navbar-brand class styles the text for the website name.
+The .navbar-buttons class styles the container for the buttons, ensuring they are spaced evenly.
+The .nav-button class styles the buttons, including hover effects.
+make todo app structure in html and css
+ChatGPT
+Here's a basic structure for a To-Do app using HTML and CSS.
+
+HTML
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="todo-app">
+        <h1 class="app-title">My To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="new-task" placeholder="Enter a new task">
+            <button id="add-task-button">Add Task</button>
+        </div>
+        <ul class="todo-list">
+            <!-- Example of a task item -->
+            <!-- <li class="todo-item">Sample Task <button class="delete-task-button">Delete</button></li> -->
+        </ul>
+    </div>
+</body>
+</html>
+CSS (styles.css)
+css
+Copy code
+/* Basic reset */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* App container styling */
+.todo-app {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.app-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+#new-task {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add button styling */
+#add-task-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#add-task-button:hover {
+    background-color: #218838;
+}
+
+/* To-Do list styling */
+.todo-list {
+    list-style-type: none;
+}
+
+/* To-Do item styling */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Delete button styling */
+.delete-task-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-task-button:hover {
+    background-color: #c82333;
+}
+Explanation
+HTML:
+The .todo-app container holds the entire app, including the title, input area, and task list.
+The .input-container div contains an input field for new tasks and an "Add Task" button.
+The .todo-list is an unordered list where each task will be an li element.
+Example tasks (commented out) can be added dynamically.
+CSS:
+The .todo-app class centers the app on the page and provides basic styling for layout, shadows, and background.
+The .input-container styles the input field and the "Add Task" button, making them sit next to each other.
+The .todo-item class styles individual task items with a delete button to the right.
+This structure provides a good foundation for building a functional To-Do app with additional JavaScript.
+
+and also tasked completed button which show task complete
+ChatGPT
+Here's how you can extend the To-Do app structure to include a "Task Completed" button. The button will mark a task as completed, and the completed task will be visually distinct (e.g., with a strikethrough and different background color).
+
+Updated HTML
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="todo-app">
+        <h1 class="app-title">My To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="new-task" placeholder="Enter a new task">
+            <button id="add-task-button">Add Task</button>
+        </div>
+        <ul class="todo-list">
+            <!-- Example of a task item -->
+            <!-- <li class="todo-item">
+                Sample Task 
+                <div class="task-buttons">
+                    <button class="complete-task-button">Complete</button>
+                    <button class="delete-task-button">Delete</button>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+</body>
+</html>
+Updated CSS (styles.css)
+css
+Copy code
+/* Basic reset */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* App container styling */
+.todo-app {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.app-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+#new-task {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add button styling */
+#add-task-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#add-task-button:hover {
+    background-color: #218838;
+}
+
+/* To-Do list styling */
+.todo-list {
+    list-style-type: none;
+}
+#toggle-completed-button:hover {
+  background-color: #0056b3;
+}
+
+/* To-Do item styling */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Task buttons container styling */
+.task-buttons {
+    display: flex;
+    gap: 10px;
+}
+.completed {
+  text-decoration: line-through;
+  background-color: #d4edda;
+  color: #155724;
+}
+#toggle-completed-button:hover {
+  background-color: #0056b3;
+}
+.completed-tasks-list {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Complete button styling */
+.complete-task-button {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.complete-task-button:hover {
+    background-color: #138496;
+}
+
+/* Delete button styling */
+.delete-task-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-task-button:hover {
+  background-color: #c82333;
+}
